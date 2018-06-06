@@ -1,0 +1,14 @@
+service: marvel-heroes
+provider:
+  name: aws
+  runtime: nodejs6.10
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource: "*"
+  environment:
+    ACCOUNT_ID: ${file(./env/.dev.json):ACCOUNT_ID}
+functions:
+  characters:
+    handler: characters/handler.hello

@@ -1,0 +1,16 @@
+{
+  "name": "marvel-heroes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start": "sls invoke local -f",
+    "deploy": "sls deploy -v"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.166.0",
+    "axios": "^0.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
