@@ -8,7 +8,9 @@ provider:
         - s3:*
       Resource: "*"
   environment:
-    ACCOUNT_ID: ${file(./env/.dev.json):ACCOUNT_ID}
+    PUBLIC_KEY: ${file(./env/.dev.json):PUBLIC_KEY}
+    PRIVATE_KEY: ${file(./env/.dev.json):PRIVATE_KEY}
+    API_ENDPOINT: ${file(./env/.dev.json):API_ENDPOINT}
 functions:
   characters:
     handler: characters/handler.hello

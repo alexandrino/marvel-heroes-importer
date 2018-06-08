@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "aws-sdk": "^2.166.0",
-    "axios": "^0.17.1"
+    "axios": "^0.17.1",
+    "crypto": "^1.0.1"
   },
   "author": "",
   "license": "ISC"
