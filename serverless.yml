@@ -6,6 +6,7 @@ provider:
     - Effect: Allow
       Action:
         - s3:*
+        - "lambda:InvokeFunction"
       Resource: "*"
   environment:
     PUBLIC_KEY: ${file(./env/.dev.json):PUBLIC_KEY}
